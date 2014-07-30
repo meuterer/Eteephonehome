@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="40" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="tileset-shinygold.png" trans="aaff7f" width="128" height="681"/>
+ </tileset>
+ <tileset firstgid="337" name="spaceship" tilewidth="16" tileheight="16">
+  <image source="Spaceship.png" trans="aaff7f" width="48" height="48"/>
+ </tileset>
+ <tileset firstgid="346" name="candy" tilewidth="16" tileheight="16">
+  <image source="Candy.png" trans="aaff7f" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="347" name="burnt hedge" tilewidth="16" tileheight="16">
+  <image source="Burnt hedge.png" trans="aaff7f" width="48" height="16"/>
+ </tileset>
+ <tileset firstgid="350" name="FirePower" tilewidth="16" tileheight="16">
+  <image source="FirePower.png" trans="aaff7f" width="48" height="48"/>
+ </tileset>
+ <tileset firstgid="359" name="Burnable" tilewidth="16" tileheight="16">
+  <image source="Burnable hedge.png" trans="aaff7f" width="48" height="16"/>
+ </tileset>
+ <tileset firstgid="362" name="Burning" tilewidth="16" tileheight="16">
+  <image source="Burning hedge.png" trans="aaff7f" width="48" height="16"/>
+ </tileset>
+ <layer name="Background" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEKgDAMQNH2Cm69hDqpk3r/Uxk3B7EgsY3NHx5ukk8QSQwhRJiVDMyQ0znr9bZfeu30an5rf+i1jt62pZdqzw0AAADkWL8tAUCTt1veY+/5vPu3tdz7tPvaM9JLr0Zvizz39mIQo4G5SvROYhaL4vut3XDX3lVsYjcwV4neFvaHbx3BZBEd
+  </data>
+ </layer>
+ <layer name="Trees" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt07kKgEAMRdF02rg0Lo3o/3+lAUljOzDD3LwLDzsZCGcws9F3dbSSFt9a+I+eOnxn60dU7PY9rR9RscE+v1mSX3byyy6L37hrFr9x1yx+465Z/MZd5ZeZ/LKTX3byy05+2ckvO/llJ7/s5Jed/LKTX3byyy6738k3g79/v5tvB3/jri/19xdB
+  </data>
+ </layer>
+ <layer name="Water" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1MsKwjAQRuG+pkv79l4qWLVgL+KfRSGEzkYGBtPzwaGhq4QJaZr/c1AndVaXYn1VndEtYrMO0nnvqlePYv1UL6MhYrMO0nnfalRTsU7zrfG81n2udb57u8/rTPPZpvs8q6Vo/feJ2KyDfL5bc7a+fcRmHeTv1da7ZX3HiM06OKr2xwAAAAAAAAAAAACgVl/wDXMD
+  </data>
+ </layer>
+ <layer name="Mud" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztz7EJACAMAMGsZamd7j+Q2SAIVuEOfoCPAAAA4NXIVlEnM/z67cNv79+dnSIAAAAA+OkCgh4QeA==
+  </data>
+ </layer>
+ <layer name="Hedges" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmUESgCAIRT1925a1q6NWM7VqTEgQxP9m3AqvVIxSAq1YzrFaJ9GQ6R6jAF9fXPttLgzOfvTu++T35bv/mM8r0vnB1xfwfcO5Q0Tw5TiM5rsl3nkuCaW2Uob3d/ZwPeuRfKWAb2w4vqUzo4dvY+753Ps5IJUnfH0CX9t5tBnRl3Mfy9WcXny599I9Mw+ld6RVpy364lRfjXVgsbaoMeHbLrZFTPjqxq7ti9TWI42e0Ffs2r5ILlfL+mvRV+vlviEFfGMD39hY/nuIxAFAAJvJ
+  </data>
+ </layer>
+ <layer name="Burnt hedge" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENACAMA0FnTmD/NVgAGppI6E5y7+oTAAAAAACAN6OSediq7mcAf7n1VnMBoN8GbYoFdA==
+  </data>
+ </layer>
+ <layer name="Burning hedge" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENACAMA0FnXWD/mgWgoYmE7iT3rj4BAAAAAAB4MyqZh63qfgbwl1tvNRcA+m1YLQZV
+  </data>
+ </layer>
+ <layer name="Burnable hedge" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENACAMA0FnWmD/BVgAGppI6E5y7+oTAAAAAACAN6OSediq7mcAf7n1VnMBoN8Gj6MGKA==
+  </data>
+ </layer>
+ <layer name="Candy" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt14EJACAIBEBbs/0HaQGDkKKIuwnkQR8jgN16uz0BABn3+bxZxrKHN9hFAKjLelS3AgAAP/PzwLoBsf4C2Q==
+  </data>
+ </layer>
+ <layer name="Spaceship" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztz7kRgDAUQ8HvEsFc7r8R1AEJA4F3Z5TrVQEAAAAAAAAAvGdpVWvW299PvrGlc8+OSXrPdF7ZmKQXntwtMwMH
+  </data>
+ </layer>
+ <layer name="FirePower" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztz7kRgDAUQ8HvRsFc7r8E1AAZA4F3Z5TrVQEAAAAAAMCzpVWtWW9/P/nGls49OybpPdN5ZWOSXgCAt921YAN8
+  </data>
+ </layer>
+ <layer name="Bushes" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1qENACAQBEEU/ZeMQaERkJ1JvoA1lx8DAAD+NPdV1HoBAOBU+4lrvQCvqu1xrRcAblipTABJ
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C125E6D1-FA94-449C-B493-38EBB9423EFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eteephonehome</RootNamespace>
+    <AssemblyName>Platformer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedSprite.cs" />
+    <Compile Include="Candy.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Mud.cs" />
+    <Compile Include="PowerUp.cs" />
+    <Compile Include="Hedge.cs" />
+    <Compile Include="MovingSprite.cs" />
+    <Compile Include="ScreenGrid.cs" />
+    <Compile Include="SpaceShipPart.cs" />
+    <Compile Include="LevLoader.cs" />
+    <Compile Include="Cop.cs" />
+    <Compile Include="Controls.cs" />
+    <Compile Include="Eteephonehome.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="StatusBar.cs" />
+    <Compile Include="statusbaritem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TiledSharp, Version=1.0.5315.39138, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TiledSharp\TiledSharp\bin\Debug\TiledSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Bushes\bushes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Candy\Candy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_down.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_down1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_down2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_left1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_left2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_right.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_right1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_right2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_up1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Cops\cop_up2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_down.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_down1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_down_arm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_hiding.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_left.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_left1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_left_arm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_right.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_right1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_right_arm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_up1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ET Sprites\ET_up_arm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Burnable_hedge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Burning_hedge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Burnt_hedge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Candy.png" />
+    <Content Include="Content\Level1Map\empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\FirePower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Level1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\Spaceship.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Level1Map\tileset-shinygold.png" />
+    <Content Include="Content\Map\Candy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Map\Spaceship.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Map\tileset-shinygold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Menus\Main Menu.png" />
+    <Content Include="Content\Menus\MainMenu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Menus\Pause Menu.png" />
+    <Content Include="Content\Pickups\FirePower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sound\E-Tee Burn %28Ignite + Tail%29.wav" />
+    <Content Include="Content\Sound\E-Tee Burn %28Ignite Only%29.wav" />
+    <Content Include="Content\Sound\E-Tee Burn %28Loop-able Burn Tail Only%29.wav" />
+    <Content Include="Content\Sound\E-Tee Button Hover.wav" />
+    <Content Include="Content\Sound\E-Tee Cop Alert %28Hey%29.wav" />
+    <Content Include="Content\Sound\E-Tee Game Over Sound.wav" />
+    <Content Include="Content\Sound\E-Tee Hurt %28Ow%29.wav" />
+    <Content Include="Content\Sound\E-Tee Invisibility Power-Up Use.wav" />
+    <Content Include="Content\Sound\E-Tee Level 1 Invisible Music %2810-second, looping%29.wav" />
+    <Content Include="Content\Sound\E-Tee Level 1 Music.wav" />
+    <Content Include="Content\Sound\E-Tee Power-Up Pick-Up.wav" />
+    <Content Include="Content\Sound\E-Tee Ship Part Grab.wav" />
+    <Content Include="Content\Sound\E-Tee Title Screen.wav" />
+    <Content Include="Content\Sound\E-Tee Walk Cycle 1.wav" />
+    <Content Include="Content\Sound\E-Tee Walk Cycle 2.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Burn %28Ignite + Tail%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Burn %28Ignite Only%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Burn %28Loop-able Burn Tail Only%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Button Hover.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Cop Alert %28Hey%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Game Over Sound.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Hurt %28Ow%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Invisibility Power-Up Use.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Level 1 Invisible Music %2810-second, looping%29.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Level 1 Music.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Power-Up Pick-Up.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Ship Part Grab.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Title Screen.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Walk Cycle 1.wav" />
+    <Content Include="Content\Sound\__MACOSX\._E-Tee Walk Cycle 2.wav" />
+    <Content Include="Content\Spaceship\Spaceship.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Status Bar\Status Bar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Tiles\tileset-shinygold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.ico" />
+    <Content Include="SDL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TiledSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ET Sprites\Thumbs.db" />
+    <None Include="Content\Fonts\emulogic.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Fonts\emusmall.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Level1Map\Level1.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sound\E-Tee Burn %28Ignite + Tail%29.ogg" />
+    <None Include="Content\Sound\E-Tee Burn %28Ignite Only%29.ogg" />
+    <None Include="Content\Sound\E-Tee Burn %28Loop-able Burn Tail Only%29.ogg" />
+    <None Include="Content\Sound\E-Tee Button Hover.ogg" />
+    <None Include="Content\Sound\E-Tee Cop Alert %28Hey%29.ogg" />
+    <None Include="Content\Sound\E-Tee Game Over Sound.ogg" />
+    <None Include="Content\Sound\E-Tee Hurt %28Ow%29.ogg" />
+    <None Include="Content\Sound\E-Tee Invisibility Power-Up Use.ogg" />
+    <None Include="Content\Sound\E-Tee Level 1 Invisible Music %2810-second, looping%29.ogg" />
+    <None Include="Content\Sound\E-Tee Level 1 Music.ogg" />
+    <None Include="Content\Sound\E-Tee Power-Up Pick-Up.ogg" />
+    <None Include="Content\Sound\E-Tee Ship Part Grab.ogg" />
+    <None Include="Content\Sound\E-Tee Title Screen.ogg" />
+    <None Include="Content\Sound\E-Tee Walk Cycle 1.ogg" />
+    <None Include="Content\Sound\E-Tee Walk Cycle 2.ogg" />
+    <None Include="Content\Sound\scrollsound.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sound\selectsound.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Stamina Bar\" />
+  </ItemGroup>
+  <!-- Specify the search path explicitly so the ResolveAssemblyReferences task picks the right ones -->
+  <Target Name="BeforeResolveReferences">
+    <CreateProperty Value="$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows;$(AssemblySearchPaths)">
+      <Output TaskParameter="Value" PropertyName="AssemblySearchPaths" />
+    </CreateProperty>
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
